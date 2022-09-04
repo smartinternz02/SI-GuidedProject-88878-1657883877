@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>
+    Spam SMS detection
+    </title>
+    <style>
+        body{
+            background-color: darksalmon;
+        }
+        .title{
+            color: black;
+            text-align: center;
+        }
+        p{
+         text-align: justify;
+            font-size: 25px;
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+        h2{
+            margin-left: 5%;
+            margin-top: 7%;
+            margin-bottom: 6%;
+        }
+        .btn{
+            margin-left: 75%;
+            height: 50px;
+            width: 110px;
+            border-radius: 200px;
+        }
+        img{
+            height: 300px;
+            width: 900px;
+            margin-left: 15%;
+        }
+        .emailzone{
+            margin-left: 10%;
+            margin-bottom: 5%;
+            height: 100px;
+            width:600px;
+
+        }
+        .emaillabel{
+            margin-left: 15%;
+            font-size: 30px;
+        }
+    </style>
+    </head>
+    <body>
+            <h1 class='title'>SPAM SMS DETECTION</h1>
+            
+        <H2>Do you want to Check your mail</H2>
+        <form action='/predict' method="post">
+            <label class='emaillabel'>Enter mail here</label>
+            <input type="text" maxlength="20000" class='emailzone' name='mail'>
+            <br>
+                   <input type='submit' class='btn' value='Click here'> 
+               </form>
+    </body>
+</html>
